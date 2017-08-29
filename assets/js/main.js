@@ -349,8 +349,8 @@ let btn2 = document.createElement("button");
 	let btnText = document.createTextNode("Menú");
 	btn2.setAttribute("id","btnMenu2")
 	btn2.appendChild(btnText);
-document.getElementById("start-button").addEventListener("click", function(e){
-  //$("#start-button").click(function(e){
+//document.getElementById("start-button").addEventListener("click", function(e){
+    $("#start-button").click(function(e){
     mapa = mapas[cont];
 	e.preventDefault();
     document.getElementById("menu").setAttribute("class","ocultar");
@@ -364,9 +364,10 @@ document.getElementById("start-button").addEventListener("click", function(e){
     }
 	}
 });
+
 // Instrucciones del juego
-document.getElementById("instrucciones").addEventListener("click", function(e){
-  //$("#instrucciones").click(function(e){
+//document.getElementById("instrucciones").addEventListener("click", function(e){
+  $("#instrucciones").click(function(e){
 	e.preventDefault();
 	document.getElementById("menu").setAttribute("class","ocultar");
 	let abrirText=document.getElementById("texto");
@@ -396,8 +397,8 @@ document.getElementById("instrucciones").addEventListener("click", function(e){
 
 // Créditos
 
-  document.getElementById("creditos").addEventListener("click", function(e){
-  //$("#creditos").click(function(e){
+  //document.getElementById("creditos").addEventListener("click", function(e){
+  $("#creditos").click(function(e){
 	e.preventDefault();
 	document.getElementById("menu").setAttribute("class","ocultar");
 	let abrirCredit=document.getElementById("textCreditos");
